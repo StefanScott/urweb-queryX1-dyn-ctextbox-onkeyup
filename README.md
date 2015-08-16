@@ -66,5 +66,9 @@ The `LIKE` operator in Postgres is case-sensitive. There is also a non-case-sens
 
 It would also be interesting to see if this is the kind of thing (eg, support for Postgres ILIKE - plus whatever the corresponding operator is in MySQL) which an "end user" could add to the Ur/Web compiler themselves. 
 
+---
+
+Thanks for any feedback. It feels really cool to see Ur/Web using FRP to instantly filter records like this!
+
 ###
 
