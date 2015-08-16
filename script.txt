@@ -7,3 +7,8 @@ createdb queryx1_dyn
 psql -f queryx1_dyn.sql queryx1_dyn
 
 psql -f insert.sql queryx1_dyn
+
+./queryX1dyn.exe
+
+point your browser to:
+http://localhost:8080/QueryX1dyn/main
