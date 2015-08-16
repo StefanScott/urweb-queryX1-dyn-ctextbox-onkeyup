@@ -19,23 +19,24 @@ fun main () =
   rows <- source <xml/>
   ;
   return 
-    <xml><body>
-      <ctextbox 
-        source={filt}
-        onkeyup={
-          fn _ =>
-            filt <- get filt
-            ;
-            rows' <- rpc (filterRows filt)
+    <xml>
+      <body>
+        <ctextbox 
+          source={filt}
+          onkeyup={
+            fn _ =>
+              filt <- get filt
+              ;
+              rows' <- rpc (filterRows filt)
+              ; 
+              set rows rows'
+          }
+        /><br/>
+        <dyn 
+          signal={
+            rows' <- signal rows
             ; 
-            set rows rows'
-        }
-      /><br/>
-      <dyn 
-        signal={
-          rows' <- signal rows
-          ; 
-          return rows'
-        }
+            return rows'
+          }
       />
     </body></xml>

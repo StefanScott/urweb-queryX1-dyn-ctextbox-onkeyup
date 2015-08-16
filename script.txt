@@ -1,0 +1,7 @@
+urweb -dbms postgres -db "host=localhost port=5432 user=scott password='pw' dbname=queryx1_dyn" queryX1dyn
+
+dropdb queryx1_dyn
+
+createdb queryx1_dyn
+
+psql -f queryx1_dyn.sql queryx1_dyn
