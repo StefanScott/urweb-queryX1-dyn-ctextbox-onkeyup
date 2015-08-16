@@ -58,7 +58,7 @@ The `LIKE` operator in Postgres is case-sensitive. There is also a non-case-sens
 
 Of course, a case-insensitive pattern-match could be done using a work-around: eg, before searching, simple convert the search string to all lower-case (resp. all upper-case), and then while doing the search, also convert the column being searched to all lower-case (resp. all upper-case). 
 
-It would also be interesting to see if this is the kind of thing (eg, support for Postgres `ILIKE` - plus whatever the corresponding operator is in MySQL) which an "end user" could add to the Ur/Web compiler themselves. 
+I imagine that it might not be too difficult for a programmer to add support for Postgres `ILIKE` (plus whatever the corresponding operator is in MySQL) to the Ur/Web compiler.
 
 ---
 

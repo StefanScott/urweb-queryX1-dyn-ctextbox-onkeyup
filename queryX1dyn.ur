@@ -14,10 +14,8 @@ fun filterRows fltr =
           (fn r => <xml>{[r.Nam]}<br/></xml>)
 
 fun main () =
-  filt <- source ""
-  ;
-  rows <- source <xml/>
-  ;
+  filt <- source "" ;
+  rows <- source <xml/> ;
   return 
     <xml>
       <body>
@@ -25,17 +23,14 @@ fun main () =
           source={filt}
           onkeyup={
             fn _ =>
-              filt <- get filt
-              ;
-              rows' <- rpc (filterRows filt)
-              ; 
+              filt <- get filt ;
+              rows' <- rpc (filterRows filt) ; 
               set rows rows'
           }
         /><br/>
         <dyn 
           signal={
-            rows' <- signal rows
-            ; 
+            rows' <- signal rows ; 
             return rows'
           }
       />
