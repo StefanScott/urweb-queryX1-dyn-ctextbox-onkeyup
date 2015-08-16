@@ -2,7 +2,7 @@
 
 This compiles and runs more-or-less correctly now.
 
-The working code for the present example is in its own GitHub repo:
+The working code for the present example is in this GitHub repo:
 
 https://github.com/StefanScott/urweb-queryX1-dyn-ctextbox-onkeyup
 
@@ -10,7 +10,13 @@ Note: Currently, you have to add the records to the table using psql, etc. (ie, 
 
 Actually there is also a script called `insert.sql` which will add the 50 US states for you.
 
-The file `script.txt` lists all the Linux commands to get this compiled, (optionally drop and) create the database, and (optionally) insert the 50 US states - using Postgres as the database.
+The file `script.txt` contains all the Linux commands to:
+
+- get this compiled, 
+- (optionally drop and) create the database, and
+- (optionally) insert the 50 US states
+
+using Postgres as the database.
 
 ---
 
