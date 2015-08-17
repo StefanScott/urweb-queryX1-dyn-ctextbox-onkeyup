@@ -30,11 +30,11 @@ There are a few caveats:
 
 (1) This is basically my first attempt at FRP, so I have no idea if this is best / proper way to wire the source and signal together.
 
-(2) Ideally, the page should be able to display *all* the records when it initially loads.
+~~(2) Ideally, the page should be able to display *all* the records when it initially loads.
 
-I tried to do this by copying the code from `<ctextbox onkeyup={...}` to `<body onload={...}>` - but I got error messages.
+I tried to do this by copying the code from `<ctextbox onkeyup={...}` to `<body onload={...}>` - but I got error messages.~~
 
-(2) Since a signal is *automatically* updated when its source changes (without the need to write any `on_` event code), it feels kinda kludgy to be using the `onclick` event of the the `<ctextbox>`.
+(3) Since a signal is *automatically* updated when its source changes (without the need to write any `on_` event code), it feels kinda kludgy to be using the `onclick` event of the the `<ctextbox>`.
 
 So I wonder if there is a way to update the recordset simply in response to the user typing in the `<ctextbox>` - without using an `on_` event anywhere.
 
