@@ -25,6 +25,7 @@ using Postgres as the database.
 Update:
 
 The program now includes two buttons `>` and `<` which paginate 50 records forwards and backwards in the table.
+
 ---
 
 There are a few caveats:
