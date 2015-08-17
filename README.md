@@ -36,7 +36,7 @@ There are a few caveats:
 
 [Solved!](https://github.com/StefanScott/urweb-queryX1-dyn-ctextbox-onkeyup/commit/1063ac164c50b752e6a6269404f68beaf653074d)
 
-(3) Since a signal is *automatically* updated when its source changes (without the need to write any `on_` event code), it feels kinda kludgy to be using the `onclick` event of the the `<ctextbox>`.
+(3) Since a signal is *automatically* updated when its source changes (without the need to write any `on_` event code), it feels kinda kludgy to be using the `onkeyup` event of the the `<ctextbox>`.
 
 So I wonder if there is a way to update the recordset simply in response to the user typing in the `<ctextbox>` - without using an `on_` event anywhere.
 
