@@ -18,7 +18,7 @@ fun main () =
   rows <- source <xml/> ;
   return 
   <xml>
-    <body>
+    <body onload={rows' <- rpc (filterRows ""); set rows rows'}>
       <ctextbox 
         source={filt}
         onkeyup={
