@@ -2,15 +2,13 @@
 
 This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a table (eg: of US states, or an extra-long word list), using the SQL `LIKE` operator - to show the first 100 rows in the table.
 
-It compiles and runs now - but see Question (3) below regarding a possible improvement.
-
-The working code for the present example is in this GitHub repo:
-
-https://github.com/StefanScott/urweb-queryX1-dyn-ctextbox-onkeyup
+It compiles and runs now - but there's still room for improvement.
 
 Note: Currently, you have to add the records to the table using psql, etc. (ie, there is no web interface to add records yet).
 
 There is also a script called `insert.sql` which will add the 50 US states to the table in the Postgres database for you.
+
+Alternatively, you can use the \copy command in psql, to add an extra-long word list.
 
 The file `script.txt` contains all the Linux and psql commands to:
 
