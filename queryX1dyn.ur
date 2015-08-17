@@ -44,6 +44,7 @@ fun main () =
         source={theFilter}
         onkeyup={
           fn _ =>
+            set theOffset 0 ;
             theFilter' <- get theFilter ;
             theOffset' <- get theOffset ;
             rows' <- rpc (filterRows theFilter' theOffset') ; 
