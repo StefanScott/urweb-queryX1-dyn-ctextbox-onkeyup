@@ -1,14 +1,40 @@
+# compile the program
+# first change the values for user and password below!
 urweb -dbms postgres -db "host=localhost port=5432 user=scott password='pw' dbname=queryx1_dyn" queryX1dyn
 
+#optional
 dropdb queryx1_dyn
 
+# create the database
 createdb queryx1_dyn
 
+# run the script generated during the compile
 psql -f queryx1_dyn.sql queryx1_dyn
 
+# insert the 50 US states
 psql -f insert.sql queryx1_dyn
 
+#####
+
+# you can also add a much longer word list by doing the following:
+
+psql queryx1_dyn
+
+# then, within psql, run the following:
+
+# first, verify that file word-list-extra-large.txt is in your current directory
+\! ls
+
+# then, copy file word-list-extra-large.txt to the table uw_queryx1dyn_thing 
+\copy uw_queryx1dyn_thing (uw_nam) FROM 'word-list-extra-large.txt';
+
+# exit psql
+\q
+
+#####
+
+# run the program
 ./queryX1dyn.exe
 
-point your browser to:
+# launch a browser, and point it to:
 http://localhost:8080/QueryX1dyn/main

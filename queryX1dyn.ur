@@ -6,11 +6,11 @@ fun filterRows fltr =
   case fltr of
       "" =>
         queryX1 
-          (SELECT thing.Nam FROM thing)
+          (SELECT thing.Nam FROM thing LIMIT 100)
           (fn r => <xml>{[r.Nam]}<br/></xml>)
     | _ =>
         queryX1 
-          (SELECT thing.Nam FROM thing WHERE thing.Nam LIKE {['%' ^ fltr ^ '%']})
+          (SELECT thing.Nam FROM thing WHERE thing.Nam LIKE {['%' ^ fltr ^ '%']} LIMIT 100)
           (fn r => <xml>{[r.Nam]}<br/></xml>)
 
 fun main () =
