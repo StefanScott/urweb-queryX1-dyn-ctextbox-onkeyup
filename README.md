@@ -14,9 +14,11 @@ Actually there is also a script called `insert.sql` which will add the 50 US sta
 
 The file `script.txt` contains all the Linux commands to:
 
-- get this compiled, 
-- (optionally drop and) create the database, and
-- (optionally) insert the 50 US states
+- compiled the program,
+- (optionally) drop the database,
+- create the database,
+- (optionally) insert the 50 US states, and
+- run the program
 
 using Postgres as the database.
 
