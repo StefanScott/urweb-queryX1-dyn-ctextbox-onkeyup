@@ -1,6 +1,6 @@
 # urweb-queryX1-dyn-ctextbox-onkeyup
 
-This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a list (eg: of US states), using the SQL `LIKE` operator.
+This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a list (eg: of US states, or an extra-long word list), using the SQL `LIKE` operator.
 
 It compiles and runs more-or-less correctly now.
 
@@ -12,12 +12,12 @@ Note: Currently, you have to add the records to the table using psql, etc. (ie, 
 
 There is also a script called `insert.sql` which will add the 50 US states to the table in the Postgres database for you.
 
-The file `script.txt` contains all the Linux commands to:
+The file `script.txt` contains all the Linux and psql commands to:
 
 - compile the program,
 - (optionally) drop the database,
 - create the database,
-- (optionally) insert the 50 US states, and
+- (optionally) insert the 50 US states, or the extra-long word list, and
 - run the program
 
 using Postgres as the database.
