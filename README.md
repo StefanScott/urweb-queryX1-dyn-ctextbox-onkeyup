@@ -1,6 +1,6 @@
 # urweb-queryX1-dyn-ctextbox-onkeyup
 
-This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a list of US states, using the SQL `LIKE` operator.
+This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a list (eg: of US states), using the SQL `LIKE` operator.
 
 It compiles and runs more-or-less correctly now.
 
@@ -10,11 +10,11 @@ https://github.com/StefanScott/urweb-queryX1-dyn-ctextbox-onkeyup
 
 Note: Currently, you have to add the records to the table using psql, etc. (ie, there is no web interface to add records yet).
 
-Actually there is also a script called `insert.sql` which will add the 50 US states for you.
+There is also a script called `insert.sql` which will add the 50 US states to the table in the Postgres database for you.
 
 The file `script.txt` contains all the Linux commands to:
 
-- compiled the program,
+- compile the program,
 - (optionally) drop the database,
 - create the database,
 - (optionally) insert the 50 US states, and
@@ -64,7 +64,7 @@ Minor quibble:
 
 The `LIKE` operator in Postgres is case-sensitive. There is also a non-case-sensitive version `ILIKE`, but it does not appear to have been implemented yet in Ur/Web. 
 
-Of course, a case-insensitive pattern-match could be done using a work-around: eg, before searching, simple convert the search string to all lower-case (resp. all upper-case), and then while doing the search, also convert the column being searched to all lower-case (resp. all upper-case). 
+Of course, a case-insensitive pattern-match could be done using a work-around: eg, before searching, simply convert the search string to all lower-case (resp. all upper-case), and then while doing the search, also convert the column being searched to all lower-case (resp. all upper-case). 
 
 I imagine that it might not be too difficult for a programmer to add support for Postgres `ILIKE` (plus whatever the corresponding operator is in MySQL) to the Ur/Web compiler.
 
