@@ -20,8 +20,6 @@ using Postgres as the database.
 
 ![Screenshot](screenshot.png?raw=true "Optional Title")
 
-[screenshot](screenshot.png)
-
 ---
 
 There are a few caveats:
