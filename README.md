@@ -34,7 +34,7 @@ There are a few caveats:
 
 ~~I tried to do this by copying the code from `<ctextbox onkeyup={...}` to `<body onload={...}>` - but I got error messages.~~
 
-[Solved!](https://github.com/StefanScott/urweb-queryX1-dyn-ctextbox-onkeyup/commit/1063ac164c50b752e6a6269404f68beaf653074d)
+[(2) Solved!](https://github.com/StefanScott/urweb-queryX1-dyn-ctextbox-onkeyup/commit/1063ac164c50b752e6a6269404f68beaf653074d)
 
 (3) Since a signal is *automatically* updated when its source changes (without the need to write any `on_` event code), it feels kinda kludgy to be using the `onkeyup` event of the the `<ctextbox>`.
 
