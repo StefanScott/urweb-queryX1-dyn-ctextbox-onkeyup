@@ -18,7 +18,7 @@ The file `script.txt` contains all the Linux commands to:
 
 using Postgres as the database.
 
-![Screenshot](screenshot.png?raw=true "Optional Title")
+![Screenshot](screenshot.png?raw=true "US states with the letters 'on' in their name")
 
 ---
 
