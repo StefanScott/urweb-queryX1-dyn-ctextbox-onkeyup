@@ -1,8 +1,8 @@
 # urweb-queryX1-dyn-ctextbox-onkeyup
 
-This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a list (eg: of US states, or an extra-long word list), using the SQL `LIKE` operator.
+This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a table (eg: of US states, or an extra-long word list), using the SQL `LIKE` operator - to show the first 100 rows in the table.
 
-It compiles and runs more-or-less correctly now.
+It compiles and runs now - but see Question (3) below regarding a possible improvement.
 
 The working code for the present example is in this GitHub repo:
 
