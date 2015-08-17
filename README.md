@@ -1,6 +1,6 @@
 # urweb-queryX1-dyn-ctextbox-onkeyup
 
-This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a table (eg: of US states, or an extra-long word list), using the SQL `LIKE` operator - to show the first 50 rows in the table.
+This is a simple Ur/Web example which lets the user type into a `<ctextbox>` to instantly filter a table (eg: of US states, or an extra-long word list), using the SQL `LIKE` operator - to show 50 rows in the table.
 
 It compiles and runs now - but there's still room for improvement.
 
@@ -32,7 +32,7 @@ There are a few caveats:
 
 (1) This is basically my first attempt at FRP, so I have no idea if this is best / proper way to wire the source and signal together.
 
-~~(2) Ideally, the page should be able to display *all* the records when it initially loads.~~
+~~(2) Ideally, the page should be able to display the records when it initially loads.~~
 
 ~~I tried to do this by copying the code from `<ctextbox onkeyup={...}` to `<body onload={...}>` - but I got error messages.~~
 
